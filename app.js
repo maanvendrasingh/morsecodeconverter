@@ -17,10 +17,10 @@ btnTranslate.addEventListener("click", clickHandler);
 function clickHandler(){
 
     // fetching data from mock URL
-    fetch(getTranslationUrl(inputText)).
+    fetch(getTranslationUrl(inputText.value)).
     then(response => response.json())
     .then(json => {
-
+        console.log(json);
         // storing output in a variable
         var translatedText = json.contents.translated;
 

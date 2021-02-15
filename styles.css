@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&family=Roboto+Mono:wght@200;400;500;600;700&display=swap');
 
 :root{
-    --primary-color: #F59E0B;
-    --off-white: #F3F4F6;
-    --dark-gray:#6B7280;
-    --dark-bg : #1F2937;
+    --primary-color: #004966;
+    --off-white: #e0fbff;
+    --box-color : #fdf9e8;
+ 
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    background-color: var(--off-white);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;    
 }
 
@@ -20,54 +22,14 @@ body{
 }
 
 .container-center{
+    background-color: crimson;
     margin:auto;
     max-width: 600px;
 }
 
-/* links */
-
-.link-primary{
-    background-color: var(--primary-color);
-    border-radius: 0.5rem;
-    display: block;
-    color: white;
-}
-.link-secondary{
-    color:var(--primary-color);
-    border-radius: 0.5rem;
-    display: block;
-    border: 1px solid var(--primary-color);
-}
-
-.link{
-    max-width: 150px;
-    box-sizing: border-box;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    margin: 1rem;
-}
-section .link{
-    font-weight: bold;
-    margin:1rem 0;
-}
-
-hr{
-    margin: 1.5rem 0;
-}
-
-.list-non-bullet{
-    list-style: none;   
-}
-
-.list-item-inline{
-    display: inline;
-    padding: 0rem 0.5rem;
-}
-
-
-
 /* navigations */
 .navigation{
+    font-family: 'Roboto Mono', monospace;
     background-color: var(--primary-color);
     color:white;
     padding: 1rem;
@@ -79,33 +41,7 @@ hr{
     cursor:pointer;
 }
 
-.nav-brand a{
-    color: white;
-    text-decoration: none;
-}
-
-.navigation .nav-pills{
-    text-align: right;
-    padding-inline-start: 0px;
-}
-
-.navigation .link{
-    color: white;
-}
-
-.navigation .link-active{
-    font-weight: bold;
-}
-
-nav .link{
-    margin: 0;
-}
-
 /* sections */
-
-section{
-    text-align: center;
-}
 
 label{
     display: block;
@@ -117,35 +53,52 @@ label{
 }
 
 textarea{
+    background-color: var(--box-color);
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 60%;
+    max-width: 550px;
     margin: auto;
     height: 11vh;
     margin: 1rem;
     padding: 1rem;
+    border-radius: 1rem;
 }
 
 
 #btn-translate{
+    background-color: rgb(20, 40, 77);
+    color: white;
+    outline: none;
+    border: none;
     display: block;
+    border-radius: 1rem;
+    padding: 1rem;
     max-width: 220px;
     margin: 1rem auto;
     font-size: larger;
-    outline: none;
 }
 
 #output{
+    background-color: var(--box-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
     width: 60%;
+    max-width: 550px;
     margin: 1rem auto;
     padding: 1rem;
     height: 15vh;
     border-radius: 1rem;
-    border: 1px solid black;
+    border: 1px solid rgb(5, 0, 54);
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 /* footers */
 
 .footer{
     background-color: var(--primary-color);
+    font-family: 'Lexend Mega', sans-serif;
     padding: 2rem 1rem;
     color: white;
     text-align: center;
@@ -155,17 +108,3 @@ textarea{
     font-weight: bold;
     font-size: 1.2rem;
 }
-
-.footer .link{
-    color: white;
-    font-size: 1.5rem;
-}
-
-.footer .list-item-inline{
-    padding: 0 0.2rem;
-}
-
-.footer ul{
-    padding-inline-start: 0;
-}
-
